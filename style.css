@@ -1,0 +1,164 @@
+.circle{
+    height:400px;
+    width:400px;
+    border-radius: 50%;
+    background-color: red;
+}
+.div-base{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1{
+    position: absolute;
+    height: 400px;
+    width: 30px;
+    background-color: red;
+    left:49%;
+    margin-top: -399px;
+    animation-name:myAnimation1;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.item2{
+    position: absolute;
+    height: 400px;
+    width: 30px;
+    left:49%;
+    margin-top: 399px;
+    background-color: red;
+    animation-name:myAnimation2;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.item3{
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    background-color: red;
+    margin-left:399px;
+    top:49%;
+    animation-name:myAnimation3;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.item4{
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    background-color: red;
+    margin-left:-399px;
+    top:49%;
+    animation-name:myAnimation4;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.item5{
+    z-index: 2;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    background-color: red;
+    left:49%;
+    top:49%;
+    transform:rotate(45deg);
+    margin-left:94px;
+    margin-top: 284px;
+    animation-name:myAnimation5;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.item6{
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    background-color: red;
+    transform:rotate(45deg);
+    margin-left:-285px;
+    margin-top: -95px;
+    animation-name:myAnimation6;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    
+}
+
+.item7{
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    background-color: red;
+    transform:rotate(-45deg);
+    margin-left:-280px;
+    margin-top: 470px;
+    animation-name:myAnimation7;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.item8{
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    background-color: red;
+    transform:rotate(-45deg);
+    margin-left:280px;
+    margin-top: -100px;
+    animation-name:myAnimation8;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation1{
+    from{
+        transform: translate(0,400px);
+    }
+}
+
+@keyframes myAnimation2{
+    from{
+        transform: translate(0,-400px);
+    }
+}
+
+@keyframes myAnimation3{
+    from{
+        transform: translate(-400px);
+    }
+}
+
+@keyframes myAnimation4{
+    from{
+        transform: translate(400px);
+    }
+}
+
+@keyframes myAnimation5{
+    from{
+        transform: rotate(45deg) translate(-400px,0);
+    }
+}
+
+@keyframes myAnimation6{
+    from{
+        transform: rotate(45deg) translate(400px,0);
+    }
+}
+
+@keyframes myAnimation7{
+    from{
+        transform: rotate(-45deg) translate(400px,0);
+    }
+}
+
+@keyframes myAnimation8{
+    from{
+        transform: rotate(-45deg) translate(-400px,0);
+    }
+}
